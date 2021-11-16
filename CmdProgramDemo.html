@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+
+输入a:<input size="30" id="in_a" style="height: 100px;font-size: 40pt;margin-bottom: 10px"/>
+<br/>
+输入b:<input size="30" id="in_b" style="height: 100px;font-size: 40pt;margin-bottom: 10px"/>
+<br/>
+输出:
+<input type="button" id="add" value="计算和" style="height: 100px;font-size: 40pt;margin-bottom: 10px">
+<input size="30" id="out" name="out" style="height: 100px;font-size: 40pt;margin-bottom: 10px"/>
+<script>
+    document.getElementById('add').addEventListener('click', function () {
+        let a = document.getElementById('in_a').value || 0;
+        let b = document.getElementById('in_b').value || 0
+        document.getElementById('out').value = Number(a) + Number(b);
+    })
+
+</script>
+</body>
+</html>
